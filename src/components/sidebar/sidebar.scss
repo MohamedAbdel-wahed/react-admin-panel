@@ -1,0 +1,97 @@
+.sidebar {
+    min-height: 100vh;
+    overflow: auto;
+    background-color: #fff;
+    flex: 1;
+    border-right: 0.5px solid #f4f4f5;
+    background-color: #fafafa;
+
+
+    .top {
+        padding:15px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 0.5px solid #f4f4f5;
+        
+        .logo_icon {
+            font-size: 25px;
+            color: #1d4ed8;
+        }
+
+        .logo_text {
+            color: #0f172a;
+            font-size: 19px;
+            font-weight: bold;
+        }
+    }
+
+    .center {
+        ul {
+            list-style: none;
+            padding: 0 8px;
+
+            .title {
+                margin-top: 15px;
+                margin-bottom: 5px;
+                font-size: 13px;
+                font-weight: bold;
+                color: #999;
+                text-transform: uppercase;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #e5e7eb;
+                }
+
+                .icon {
+                    font-size: 22px;
+                    color: #3b82f6;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: #777;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        margin: 30px 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .color_option {
+            width: 25px;
+            height: 25px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:nth-child(1){
+                background-color: lightsmoke;
+            }
+
+            &:nth-child(2){
+                background-color: red;
+            }
+
+            &:nth-child(3){
+                background-color: blue;
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,33 @@
+.home {
+    display: flex;
+
+
+    .home_container {
+        flex: 5;
+
+        .wrapper {
+            padding: 0 20px;
+
+            .widgets, .charts {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+
+            .widgets {
+                margin: 20px 0;
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .charts {
+                margin: 30px 0;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+
+
+        }
+    }
+
+
+}

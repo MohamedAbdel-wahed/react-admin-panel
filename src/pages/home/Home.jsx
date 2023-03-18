@@ -5,7 +5,9 @@ import Featured from '../../components/featured/Featured';
 import Navbar from '../../components/navbar/Navbar';
 import Sidebar from '../../components/sidebar/Sidebar';
 import Widget from '../../components/widget/Widget';
+import TableList from '../../components/table/TableList';
 import { widgetsData } from '../../utils/widgets';
+
 
 
 function Home() {
@@ -34,6 +36,11 @@ function Home() {
           <div className="charts">
             <Featured />
             <Chart />
+          </div>
+
+          <div className="table_container">
+            <div className="title">latest transactions</div>
+            <TableList />
           </div>
         </div>
       </div>

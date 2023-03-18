@@ -1,0 +1,45 @@
+.table {
+    margin: 20px 0;
+
+    .cell_wrapper{ 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-size: cover;
+        }
+    }
+
+    .table_head {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .status {
+        padding: 8px 12px;
+        border-radius: 10px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+   
+        &.approved {
+            background-color: #f0fdf4;
+            color: #15803d;
+        }
+    
+        &.pending {
+            background-color: #fefce8;
+            color: #a16207;
+        }
+    
+        &.canceled {
+            background-color: #fef2f2;
+            color: #b91c1c;
+        }
+    }
+
+}
